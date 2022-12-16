@@ -13,7 +13,17 @@ function updadeClock(){
     let second = now.getSeconds();
 
                     //inner pra eu poder colocar um texto
-    digitalElement.innerHTML = `${hour}:${minute}:${second}`;
+    digitalElement.innerHTML = `${fixZero(hour)}:${fixZero(minute)}:${fixZero(second)}`;
+}
+
+    //corrigindo o tempo quando é menor que 10
+    //se menor que 10 retorna com um 0 em frente
+function fixZero(time) {
+    if(time<10) {
+        return '0'+time;
+    } else {
+        return time;
+    }
 }
 
 //intervalo infinito de tempo em tempo rodando em msegundos
