@@ -14,6 +14,10 @@ function updadeClock(){
 
                     //inner pra eu poder colocar um texto
     digitalElement.innerHTML = `${fixZero(hour)}:${fixZero(minute)}:${fixZero(second)}`;
+
+                    //rponteiro dos segundos
+    let sDeg = ((360 / 60) * second) - 90;
+    sElement.style.transform = `rotate(${sDeg}deg)`;
 }
 
     //corrigindo o tempo quando é menor que 10
