@@ -10,3 +10,18 @@ if((idade >= 18) && ((genero == "F") || (genero == "f"))) {
 } else {
     console.log("Bloqueado");
 }
+
+x = 0;  //1 declarar a variavel
+
+//enquanto -> serve para loops
+while (x < 150) { //2 colocar o limitador
+    x = x + 1; //3 adicionar o contador
+
+    if (x > 60){
+        //parar
+        break;
+    }else {
+
+        console.log("bora mais um");
+    }
+}
