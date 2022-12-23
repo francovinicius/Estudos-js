@@ -1,3 +1,5 @@
+
+
 //exemplo de validação de idade
 
 var idade = prompt ("Digite sua idade");
@@ -25,3 +27,21 @@ while (x < 150) { //2 colocar o limitador
         console.log("bora mais um");
     }
 }
+
+
+
+//quando usar o for
+//se x for, faça enquanto
+for(x = 0; x < 10; x++) { //1 2 e 3
+    console.log(x)
+}
+
+/* 
+
+x++ - incrementar de 1 em 1.
+x-- - decrementar de 1 em 1.
+x+=2 - incrementar de 2 em 2 (ou de n);
+x-=2 - decrementar de 2 em 2 (ou de n);
+x*=2 - multiplicar de 2 em 2 (ou de n);
+
+*/
