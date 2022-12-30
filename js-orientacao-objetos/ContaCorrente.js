@@ -1,4 +1,4 @@
-class ContaCorrente {
+export class ContaCorrente {
     agencia;
     //# -> torna o campo privada https://github.com/tc39/proposal-class-fields#private-fields
     // mas usa-se o _ na comunidade

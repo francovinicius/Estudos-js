@@ -1,3 +1,6 @@
+import { Cliente } from "./Cliente";
+import { ContaCorrente } from "./ContaCorrente";
+
 
 const cliente1 = new Cliente();
 
