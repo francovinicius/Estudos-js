@@ -2,7 +2,7 @@ export class ContaCorrente {
     agencia;
     cliente;
 
-    
+
     //# -> torna o campo privada https://github.com/tc39/proposal-class-fields#private-fields
     // mas usa-se o _ na comunidade
     _saldo = 0;
@@ -23,5 +23,12 @@ export class ContaCorrente {
         return;
       }
       this._saldo += valor;
+    }
+
+    transferir(valor, conta) {
+                                        //
+        const valorSacado = this.sacar(valor);
+        //
+        conta.depositar(valorSacado);
     }
   }
