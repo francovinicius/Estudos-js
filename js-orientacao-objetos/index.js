@@ -3,7 +3,6 @@ import { ContaCorrente } from "./ContaCorrente.js";
 
 
 const cliente1 = new Cliente("Ricardo", 11122233309);
-
 const cliente2 = new Cliente("Alice", 88822233309);
 
                                             //com construtor
@@ -45,4 +44,4 @@ conta2.agencia = 102;
 
 console.log(contaCorrente1, contaCorrente2)
 
-console.log(cliente1.cpf)
+console.log(ContaCorrente.numeroDeContas)

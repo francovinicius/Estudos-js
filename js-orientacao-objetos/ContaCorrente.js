@@ -1,6 +1,9 @@
 import { Cliente } from "./Cliente.js";
 
 export class ContaCorrente {
+
+    //
+  static numeroDeContas = 0;
   agencia;
 
   _cliente;
@@ -8,8 +11,6 @@ export class ContaCorrente {
   //# -> torna o campo privada https://github.com/tc39/proposal-class-fields#private-fields
   // mas usa-se o _ na comunidade para privado
   _saldo = 0;
-
-
 
   /* get e set são assessores*/
   //atribuir
@@ -26,10 +27,10 @@ export class ContaCorrente {
     return this._saldo;
   }
 
-
   constructor(cliente, agencia) {
     this.agencia = agencia;
-    this.cliente = cliente
+    this.cliente = cliente;
+    ContaCorrente.numeroDeContas += 1;
   }
 
   sacar(valor) {
