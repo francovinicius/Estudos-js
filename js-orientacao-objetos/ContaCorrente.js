@@ -1,8 +1,12 @@
 export class ContaCorrente {
     agencia;
+    cliente;
+
+    
     //# -> torna o campo privada https://github.com/tc39/proposal-class-fields#private-fields
     // mas usa-se o _ na comunidade
     _saldo = 0;
+    
   
     sacar(valor) {
       //this desse saldo (parametro)
